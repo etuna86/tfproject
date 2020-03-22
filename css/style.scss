@@ -644,11 +644,14 @@ header
     position: absolute;
     top: -3vw;
     right: 7vw;
-    @include circleRed();
+    width: 30vw;
+    img {
+      max-width: 100%;
+    }
   }
-  .triangleRightRed
+  .triangle-right-wight-blue
   {
-    @include triangleRightRed();
+    @include triangleRightWeightBlue();
   }
   .webiner-inside
   {

@@ -472,19 +472,15 @@ header {
     position: absolute;
     top: -3vw;
     right: 7vw;
-    background-color: #ED1C24;
-    height: 10vw;
-    width: 10vw;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    border: 0.4vw solid #fff; }
-  .webiner-platform .triangleRightRed {
+    width: 30vw; }
+    .webiner-platform .circleRed img {
+      max-width: 100%; }
+  .webiner-platform .triangle-right-wight-blue {
     width: 0;
     height: 0px;
     border-style: solid;
     border-width: 50vh calc(180vw) 0px 0;
-    border-color: transparent #ED1C24 transparent transparent;
+    border-color: transparent #03073c transparent transparent;
     float: right; }
   .webiner-platform .webiner-inside {
     position: absolute;

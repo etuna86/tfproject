@@ -22,10 +22,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="231" column="10" lean-forward="true" selection-start-line="231" selection-start-column="10" selection-end-line="231" selection-end-column="10" />
+            <state relative-caret-position="264">
+              <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
               <folding>
                 <element signature="n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#section#5;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -34,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="646" column="16" selection-start-line="646" selection-start-column="16" selection-end-line="646" selection-end-column="16" />
+            <state relative-caret-position="317">
+              <caret line="739" column="23" selection-start-line="739" selection-start-column="23" selection-end-line="739" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -52,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style-variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="128" column="30" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="30" />
+            <state relative-caret-position="317">
+              <caret line="152" column="12" lean-forward="true" selection-start-line="152" selection-start-column="12" selection-end-line="152" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -68,10 +70,19 @@
       <find>banner</find>
       <find>triangle-section</find>
       <find>custom-select</find>
-      <find>webiner</find>
       <find>trianglerightre</find>
       <find>circleRed</find>
+      <find>live</find>
+      <find>$blackcolor</find>
+      <find>counter</find>
+      <find>main</find>
+      <find>webiner</find>
+      <find>service-trian</find>
+      <find>triang</find>
     </findStrings>
+    <replaceStrings>
+      <replace>$weightBlueColor</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,9 +92,9 @@
       <list>
         <option value="$USER_HOME$/Desktop/ornek html/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/css/style-variables.scss" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style-variables.scss" />
         <option value="$PROJECT_DIR$/css/style.scss" />
       </list>
     </option>
@@ -100,7 +111,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,6 +127,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -148,18 +159,19 @@
       <option name="presentableId" value="Default" />
       <updated>1584790605638</updated>
       <workItem from="1584790607827" duration="4619000" />
-      <workItem from="1584857345249" duration="2601000" />
+      <workItem from="1584857345249" duration="3415000" />
+      <workItem from="1584944798515" duration="4386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7220000" />
+    <option name="totallyTimeSpent" value="12420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -213,27 +225,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style-variables.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="128" column="30" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="30" />
+        <state relative-caret-position="264">
+          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+          <folding>
+            <element signature="n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#section#5;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/style-variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="231" column="10" lean-forward="true" selection-start-line="231" selection-start-column="10" selection-end-line="231" selection-end-column="10" />
-          <folding>
-            <element signature="n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="317">
+          <caret line="152" column="12" lean-forward="true" selection-start-line="152" selection-start-column="12" selection-end-line="152" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="646" column="16" selection-start-line="646" selection-start-column="16" selection-end-line="646" selection-end-column="16" />
+        <state relative-caret-position="317">
+          <caret line="739" column="23" selection-start-line="739" selection-start-column="23" selection-end-line="739" selection-end-column="23" />
         </state>
       </provider>
     </entry>

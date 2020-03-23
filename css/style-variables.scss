@@ -9,9 +9,11 @@ $redcoloropacity01:rgba(237,28,36,0.9);
 $redcoloropacity03:rgba(237,28,36,0.3);
 $footergreycolor:#999999;
 $servicesgreycolor:#666666;
-$mainColor:#000;
+
 $lightGreyColor:#f2f2f2;
 $weightBlueColor:#03073c;
+
+$mainColor:$weightBlueColor;
 @mixin headershadow()
 {
   background : -moz-linear-gradient(50% 100% 90deg,rgba(0, 0, 0, 0) 1.62%,rgba(0, 0, 0, 0.09) 10.44%,rgba(0, 0, 0, 1) 100%);
@@ -150,8 +152,8 @@ $weightBlueColor:#03073c;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 25vh calc(25vw) 25vh 0;
-  border-color: transparent $redcoloropacity01 transparent transparent;
+  border-width: 25vh calc(25vw - 5px) 25vh 0;
+  border-color: transparent $weightBlueColor transparent transparent;
   float: right;
 }
 

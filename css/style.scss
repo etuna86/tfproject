@@ -93,12 +93,14 @@ a
 
         a
         {
+          color:$weightBlueColor;
           &:hover
           {
             i
             {
               margin-right:0px;
               margin-left:5px;
+
               @include transition-method(0.5s);
             }
 
@@ -266,7 +268,7 @@ header
   }
   &.header-black
   {
-    background: $blackcolor;
+    background: $weightBlueColor;
     opacity: 1;
     transition: all .5s ease-in;
     -moz-transition: all .5s ease-in;
@@ -533,6 +535,11 @@ header
   .counter
   {
     padding: 0px 1rem;
+    i{
+      float: left;
+      font-size: 40px;
+      color:$mainColor;
+    }
     img
     {
       float: left;
@@ -541,6 +548,7 @@ header
     }
     span
     {
+      color:$mainColor;
       float: left;
       font-size: 55px;
       width: 50%;
@@ -557,6 +565,7 @@ header
       font-family: 'Gugi', cursive;
       height: 55px;
       line-height: 55px;
+      color:$mainColor;
     }
     b
     {
@@ -565,7 +574,7 @@ header
       font-family: 'Roboto', sans-serif;
       font-size:14px;
       float: left;
-      color:$greycolor;
+      color:$mainColor;
       margin:1rem 0;
     }
   }
@@ -610,7 +619,7 @@ header
   .love-work
   {
     text-align: center;
-    color:$blackcolor;
+    color:$weightBlueColor;
     h3
     {
       text-transform: capitalize;
@@ -671,7 +680,7 @@ header
         font-size: 2.3vh;
         font-weight: 600;
 
-        color:$blackcolor;
+        color:$weightBlueColor;
       }
       p
       {
@@ -706,20 +715,29 @@ header
 .live-solution
 {
   float: left;
-  background: url('../img/live-solution.jpg');
+  background: url('../img/universe_blue.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100px;
   position: relative;
+  .space-darkness{
+      position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $weightBlueColor;
+    z-index: 1;
+    opacity: 0.5;
+  }
   .live-box
   {
     padding: 10rem 0;
     position: relative;
+    z-index: 2;
     i
     {
       position: absolute;
       font-size: 40px;
-      color:$redcolor;
+      color:$whitecolor;
       &:nth-child(1)
       {
         top: 3rem;
@@ -740,6 +758,7 @@ header
     }
     .live-desc
     {
+      z-index: 2;
       h3
       {
         color:$whitecolor;
@@ -790,6 +809,8 @@ header
   }
   .home-services
   {
+    z-index: 2;
+    position: relative;
     .home-service-box
     {
       float: left;
@@ -834,7 +855,7 @@ header
         {
           height: 8vh;
           width: 0.5vw;
-          background-color: #ED1C24;
+          background-color: $whitecolor;
           position: absolute;
           left: 0;
           top: 0;
@@ -855,7 +876,7 @@ header
     position: absolute;
     right:0;
     z-index: 12;
-    bottom:0;
+    bottom:0px;
     .service-triangle-red
     {
 
@@ -883,7 +904,7 @@ header
     position: absolute;
     right: 0;
     z-index: 12;
-    bottom: -15vh;
+    bottom: calc(85vh - (100vh - 3px) );
     .service-triangle-red
     {
 
@@ -991,7 +1012,7 @@ header
 //footer
 footer
 {
-  background-color: $blackcolor;
+  background-color: $weightBlueColor;
   padding: 30px 0px;
   .footer-inside
   {
@@ -1198,7 +1219,7 @@ footer
         font-weight: 600;
         position: relative;
         margin-bottom: 2vh;
-        color:$blackcolor;
+        color:$weightBlueColor;
         .red-line
         {
           height: 8vh;
@@ -1212,7 +1233,7 @@ footer
       p
       {
         font-size: 1.4vh;
-        color:$blackcolor;
+        color:$weightBlueColor;
         font-weight: 500;
         margin-bottom: 5px;
       }
@@ -1259,11 +1280,11 @@ footer
       width:33.333%;
       float: left;
       height: 30vh;
-      border-bottom:1px solid $blackcolor;
+      border-bottom:1px solid $weightBlueColor;
       padding: 3vh 1vw 3vh 0;
       &:nth-child(1),&:nth-child(2),&:nth-child(4),&:nth-child(5)
       {
-        border-right:1px solid $blackcolor;
+        border-right:1px solid $weightBlueColor;
       }
     &:nth-child(4),&:nth-child(5),&:nth-child(6)
     {
@@ -1355,7 +1376,7 @@ footer
     .love-work
     {
       text-align: center;
-      color:$blackcolor;
+      color:$weightBlueColor;
       h3
       {
         text-transform: capitalize;
@@ -1385,11 +1406,11 @@ footer
         width:33.333%;
         float: left;
         height: 30vh;
-        border-bottom:0px solid $blackcolor;
+        border-bottom:0px solid $weightBlueColor;
         padding: 3vh 1vw 3vh 0;
         &:nth-child(1),&:nth-child(2),&:nth-child(4),&:nth-child(5)
         {
-          border-right:1px solid $blackcolor;
+          border-right:1px solid $weightBlueColor;
         }
         &:nth-child(4),&:nth-child(5),&:nth-child(6)
         {
@@ -1481,8 +1502,8 @@ footer
     line-height: 45px;
     padding: 0px 3rem;
     @include borderradius(24px);
-    color:$blackcolor;
-    border:1px solid $blackcolor;
+    color:$weightBlueColor;
+    border:1px solid $weightBlueColor;
     font-size: 22px;
     font-weight: 600;
     display: inline-block;
@@ -1493,7 +1514,7 @@ footer
     -ms-transition: all .5s ease-in;
     &:hover
     {
-      background-color: $blackcolor;
+      background-color: $weightBlueColor;
       color:$whitecolor;
       transition: all .5s ease-in;
       -moz-transition: all .5s ease-in;
@@ -1520,11 +1541,11 @@ footer
         width: 100%;
         height: 60px;
         line-height: 60px;
-        border:1px solid $blackcolor;
+        border:1px solid $weightBlueColor;
         padding: 0px 2rem;
         &::placeholder
         {
-          color:$blackcolor;
+          color:$weightBlueColor;
         }
       }
       i
@@ -1532,7 +1553,7 @@ footer
         position: absolute;
         top:0;
         right: 2rem;
-        color:$blackcolor;
+        color:$weightBlueColor;
         line-height: 60px;
         font-size:25px;
 
@@ -1540,8 +1561,8 @@ footer
         textarea
         {
           width:100%;
-          color:$blackcolor;
-          border:1px solid $blackcolor;
+          color:$weightBlueColor;
+          border:1px solid $weightBlueColor;
           padding: 1rem 2rem;
         }
         input[type=submit]
@@ -1556,7 +1577,7 @@ footer
           border:0px !important;
           &:hover
           {
-            background-color: $blackcolor;
+            background-color: $weightBlueColor;
             color:$whitecolor;
             transition: all .5s ease-in;
             -moz-transition: all .5s ease-in;
@@ -1594,7 +1615,7 @@ footer
           -webkit-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.75);
           -moz-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.75);
           box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.75);
-          background-color: $blackcolor;
+          background-color: $weightBlueColor;
           text-align: center;
           float: left;
           @include borderradius(100%);
@@ -1611,7 +1632,7 @@ footer
           a
           {
             text-decoration: none;
-            color:$blackcolor;
+            color:$weightBlueColor;
             height: 35px;
             line-height: 35px;
             padding:0 1rem;
@@ -1627,7 +1648,7 @@ footer
           }
           p
           {
-            color:$blackcolor;
+            color:$weightBlueColor;
             padding: 0px 1rem;
           }
         }

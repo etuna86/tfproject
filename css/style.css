@@ -668,18 +668,77 @@ header {
       margin: 0px 1vw;
       position: relative;
       cursor: pointer; }
+      .what-are-we-doing #wedoing .item:hover .doing-top {
+        top: -50px;
+        transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in; }
+      .what-are-we-doing #wedoing .item:hover .doing-bottom {
+        bottom: -50px;
+        transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in; }
+      .what-are-we-doing #wedoing .item .doing-top {
+        transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        position: absolute;
+        top: 0px;
+        width: 100%; }
+        .what-are-we-doing #wedoing .item .doing-top .doing-top-inside {
+          position: relative;
+          width: 100%; }
+          .what-are-we-doing #wedoing .item .doing-top .doing-top-inside .left-angle {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 50px 100px 0vh 0;
+            border-color: #fff transparent transparent transparent;
+            float: left; }
+          .what-are-we-doing #wedoing .item .doing-top .doing-top-inside .right-angle {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0px 100px 50px 0;
+            border-color: transparent #fff transparent transparent;
+            float: right; }
+      .what-are-we-doing #wedoing .item .doing-bottom {
+        transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        position: absolute;
+        bottom: 0px;
+        width: 100%; }
+        .what-are-we-doing #wedoing .item .doing-bottom .left-angle {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0px 100px 50px 0;
+          border-color: transparent transparent #fff transparent;
+          float: left; }
+        .what-are-we-doing #wedoing .item .doing-bottom .right-angle {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 50px 100px 0px 0;
+          border-color: transparent #fff transparent transparent;
+          float: right; }
       .what-are-we-doing #wedoing .item .item-hover {
-        opacity: 0;
+        opacity: 1;
         position: absolute;
         height: 100%;
         width: 100%;
-        background-color: rgba(237, 28, 36, 0.3); }
+        background-color: rgba(3, 7, 60, 0.3); }
         .what-are-we-doing #wedoing .item .item-hover:hover {
-          opacity: 1;
-          transition: all .5s ease-in;
-          -moz-transition: all .5s ease-in;
-          -webkit-transition: all .5s ease-in;
-          -ms-transition: all .5s ease-in; }
+          opacity: 0;
+          transition: all 0.5s ease-in;
+          -moz-transition: all 0.5s ease-in;
+          -webkit-transition: all 0.5s ease-in;
+          -ms-transition: all 0.5s ease-in; }
         .what-are-we-doing #wedoing .item .item-hover .item-hover-img {
           position: relative;
           height: 100%;
@@ -692,7 +751,10 @@ header {
             bottom: 0;
             right: 0;
             height: auto;
-            width: 5vw; }
+            width: 5vw;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px; }
       .what-are-we-doing #wedoing .item img {
         width: 100%;
         object-fit: cover;
@@ -703,13 +765,13 @@ header {
         position: absolute;
         top: 30%;
         left: -5vh;
-        color: #000;
+        color: #03073c;
         font-size: 5vw; }
       .what-are-we-doing #wedoing .owl-nav .owl-next span {
         position: absolute;
         top: 30%;
         right: -5vh;
-        color: #000;
+        color: #03073c;
         font-size: 5vw; }
 
 footer {

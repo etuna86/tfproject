@@ -12,6 +12,7 @@ $servicesgreycolor:#666666;
 
 $lightGreyColor:#f2f2f2;
 $weightBlueColor:#03073c;
+$weightBlueColoropacity03:rgba(3, 7, 60, 0.3);;
 
 $mainColor:$weightBlueColor;
 @mixin headershadow()
@@ -52,6 +53,46 @@ $mainColor:$weightBlueColor;
   border-color:  transparent $whitecolor transparent transparent;
   float: right;
 }
+
+@mixin doingTriangleLeftUpper()
+{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 0vh 0;
+  border-color: $whitecolor transparent transparent transparent;
+  float: left;
+}
+@mixin doingTriangleRightUpper()
+{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 100px 50px 0;
+  border-color:  transparent $whitecolor transparent transparent;
+  float: right;
+}
+
+@mixin doingTriangleLeftBottom()
+{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 100px 50px 0;
+  border-color: transparent transparent $whitecolor transparent;
+  float: left;
+}
+@mixin doingTriangleRightBottom()
+{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 0px 0;
+  border-color: transparent $whitecolor transparent transparent;
+  float: right;
+}
+
+
 
 
 

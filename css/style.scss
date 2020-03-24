@@ -940,22 +940,59 @@ header
     margin: 0px 1vw;
     position: relative;
     cursor:pointer;
+    &:hover{
+      .doing-top{
+        top:-50px;
+        @include transition-method(0.5s);
+      }
+    }
+    &:hover{
+      .doing-bottom{
+        bottom:-50px;
+        @include transition-method(0.5s);
+      }
+    }
+    .doing-top {
+      @include transition-method(0.5s);
+      position: absolute;
+      top:0px;
+      width: 100%;
+      .doing-top-inside{
+        position: relative;
+        width:100%;
+        .left-angle{
+          @include doingTriangleLeftUpper();
+        }
+        .right-angle{
+          @include doingTriangleRightUpper();
+        }
+      }
+
+    }
+
+    .doing-bottom {
+      @include transition-method(0.5s);
+      position: absolute;
+      bottom:0px;
+      width: 100%;
+      .left-angle{
+        @include doingTriangleLeftBottom();
+      }
+      .right-angle{
+        @include doingTriangleRightBottom();
+      }
+    }
     .item-hover
     {
-      opacity: 0;
+      opacity: 1;
       position: absolute;
       height: 100%;
       width:100%;
-      background-color: $redcoloropacity03;
+      background-color: $weightBlueColoropacity03;
       &:hover
       {
-        opacity: 1;
-        transition: all .5s ease-in;
-        -moz-transition: all .5s ease-in;
-        -webkit-transition: all .5s ease-in;
-        -ms-transition: all .5s ease-in;
-
-
+        opacity: 0;
+        @include transition-method(0.5s);
       }
       .item-hover-img
       {
@@ -972,6 +1009,9 @@ header
           right: 0;
           height: auto;
           width: 5vw;
+          padding: 10px;
+          background: $whitecolor;
+          border-radius: 5px;
         }
       }
     }
@@ -990,7 +1030,7 @@ header
         position: absolute;
         top: 30%;
         left: -5vh;
-        color: #000;
+        color: $weightBlueColor;
         font-size: 5vw;
       }
     }
@@ -999,7 +1039,7 @@ header
         position: absolute;
         top: 30%;
         right: -5vh;
-        color: #000;
+        color: $weightBlueColor;
         font-size: 5vw;
       }
     }

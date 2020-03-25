@@ -120,7 +120,11 @@ $mainColor:$weightBlueColor;
   -ms-transform: scale($scaleValue);
   -moz-transform: scale($scaleValue);
 }
-
+@mixin rotateMethod($rotateMethod){
+  -webkit-transform: rotate($rotateMethod);
+  -ms-transform: rotate($rotateMethod);
+  -moz-transform: rotate($rotateMethod);
+}
 @mixin circleRed()
 {
   background-color: $redcolor;

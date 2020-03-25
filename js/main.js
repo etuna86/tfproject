@@ -45,6 +45,33 @@ $(window).scroll(function() {
 });
 
 /**/
+if (screen.width > 765) {
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        var myBtnElement=document.getElementById("myBtn");
+        var rocketFire=myBtnElement.getElementsByTagName('b');
+        rocketFire[0].style.display = "inline-block";
+        setTimeout(function(){  rocketFire[0].style.display = "none"; }, 1100);
+        console.warn("rocketFire",rocketFire);
+        var body = $("html, body");
+        body.stop().animate({scrollTop:0}, 1000, 'swing', function() {
+        });
+    }
+
+
+
+}
 
 $( window ).scroll(function() {
 
@@ -110,6 +137,26 @@ $(".search-show-btn").click(function(){
     $(".search-text").toggleClass("slide");
 
 });
+
+
+$('#testimonials').owlCarousel({
+    items:1,
+    loop:true,
+    margin:0,
+    nav:false,
+    //navText: ["<img src='img/left-arrow.png'>","<img src='img/right-arrow.png'>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
 $('#wedoing').owlCarousel({
     items:3,
     loop:true,

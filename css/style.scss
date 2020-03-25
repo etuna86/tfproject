@@ -728,6 +728,18 @@ header
     z-index: 1;
     opacity: 0.5;
   }
+  .testimonials-header{
+    text-align: center;
+    z-index: 15;
+    position: relative;
+    margin: 20px 0px;
+    h3{
+      display: inline-block;
+      color:$whitecolor;
+      font-weight: bold;
+      border-bottom: 4px solid $whitecolor;
+    }
+  }
   .live-box
   {
     padding: 10rem 0;
@@ -762,7 +774,6 @@ header
       h3
       {
         color:$whitecolor;
-        font-weight: bold;
       }
       p
       {
@@ -1695,4 +1706,54 @@ footer
       }
     }
   }
+}
+
+
+#myBtn{
+  display: none;
+  bottom: 20px;
+  right: 20px;
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  background-color:$whitecolor;
+  border:1px solid $weightBlueColor;
+  z-index: 999999;
+  padding: 10px;
+  outline: 0px;
+  i{
+    color:$weightBlueColor;
+    font-size: 30px;
+    margin-top: 5px;
+    @include rotateMethod(-45deg);
+  }
+  b{
+    display: none;
+    height: 10px;
+    width: 100%;
+    position: relative;
+    z-index: 999999;
+
+    margin-top: 5px;
+    @include rotateMethod(180deg);
+    i{
+      @include rotateMethod(180deg);
+    }
+    .flame{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/flame.jpg);
+      background-size: 60px;
+      position: relative;
+      background-position: 20px;
+      animation:firewawe  0.3s  infinite ;
+    }
+  }
+}
+
+
+@keyframes firewawe {
+  from { background-position-y: 20px;}
+  to { background-position-y: 0px;}
 }

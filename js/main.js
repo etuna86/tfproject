@@ -178,7 +178,9 @@ $('#wedoing').owlCarousel({
 $('#main-slider').owlCarousel({
     loop:true,
     margin:10,
+    dots:false,
     nav:true,
+    navText:['<div class="slider-arrow-box"><i class="fa fa-rocket" aria-hidden="true"></i></div>','<div class="slider-arrow-box"><i class="fa fa-rocket" aria-hidden="true"></i></div>'],
     responsive:{
         0:{
             items:1

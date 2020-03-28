@@ -138,8 +138,26 @@ $(".search-show-btn").click(function(){
 
 });
 
+$('#main-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    nav:true,
+    navText:['<div class="slider-arrow-box"><i class="fa fa-rocket" aria-hidden="true"></i></div>','<div class="slider-arrow-box"><i class="fa fa-rocket" aria-hidden="true"></i></div>'],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
 
-$('#testimonials').owlCarousel({
+$('#testimonialsslider').owlCarousel({
     items:1,
     loop:true,
     margin:0,
@@ -175,23 +193,14 @@ $('#wedoing').owlCarousel({
         }
     }
 })
-$('#main-slider').owlCarousel({
-    loop:true,
-    margin:10,
-    dots:false,
-    nav:true,
-    navText:['<div class="slider-arrow-box"><i class="fa fa-rocket" aria-hidden="true"></i></div>','<div class="slider-arrow-box"><i class="fa fa-rocket" aria-hidden="true"></i></div>'],
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
 
 
+$(".list").on('click', function(event) {
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top - 80
+    }, 800, function(){
+        window.location.hash = hash;
+    });
+});

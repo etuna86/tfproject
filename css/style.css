@@ -603,7 +603,25 @@ header {
     position: absolute;
     top: -3vw;
     right: 7vw;
-    width: 30vw; }
+    width: 30vw;
+    -webkit-animation: rotating 120s linear infinite;
+    -moz-animation: rotating 120s linear infinite;
+    -ms-animation: rotating 120s linear infinite;
+    -o-animation: rotating 120s linear infinite;
+    animation: rotating 120s linear infinite; }
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
     .webiner-platform .circleRed img {
       max-width: 100%; }
   .webiner-platform .triangle-right-wight-blue {
@@ -639,10 +657,27 @@ header {
       display: inline-grid;
       width: 20%; }
       .webiner-platform .webiner-inside .webiner-img img {
+        -webkit-animation: rotating 120s linear infinite;
+        -moz-animation: rotating 120s linear infinite;
+        -ms-animation: rotating 120s linear infinite;
+        -o-animation: rotating 120s linear infinite;
+        animation: rotating 120s linear infinite;
         height: 40vh;
         position: absolute;
         bottom: 0; }
-
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 .live-solution {
   float: left;
   background: url("../img/universe_blue.jpg");
@@ -1317,34 +1352,195 @@ footer {
       -webkit-transition: all .5s ease-in;
       -ms-transition: all .5s ease-in; }
 
-.contact-us .contact-form .input-group {
-  -webkit-box-shadow: 1px 1px 5px 0px #f2f2f2;
-  -moz-box-shadow: 1px 1px 5px 0px #f2f2f2;
-  box-shadow: 1px 1px 5px 0px #f2f2f2;
-  display: flex; }
-  .contact-us .contact-form .input-group .input-group-prepend {
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px; }
-    .contact-us .contact-form .input-group .input-group-prepend .input-group-text {
-      width: 50px;
-      background: none;
-      border: 1px solid #f2f2f2;
-      border-right: 0px;
+.moon-section {
+  background: #03073c;
+  height: 100vh;
+  /* display: -webkit-box; */
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+  .moon-section .moon-out {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    z-index: 12;
+    background-position: center;
+    background-image: url("../img/sun.png");
+    background-repeat: no-repeat;
+    background-size: 104%;
+    background-position: center;
+    -webkit-animation: rotating 120s linear infinite;
+    -moz-animation: rotating 120s linear infinite;
+    -ms-animation: rotating 120s linear infinite;
+    -o-animation: rotating 120s linear infinite;
+    animation: rotating 120s linear infinite; }
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+  .moon-section .moon {
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    margin: auto auto;
+    border: 40px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    z-index: 999999; }
+    .moon-section .moon .moon-inside {
+      position: relative;
+      z-index: 42;
+      background: #262626;
+      background: -moz-radial-gradient(center, ellipse cover, #262626 0%, #1a1a1a 21%, #141414 55%, black 100%);
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #262626), color-stop(21%, #1a1a1a), color-stop(55%, #141414), color-stop(100%, black));
+      background: -webkit-radial-gradient(center, ellipse cover, #262626 0%, #1a1a1a 21%, #141414 55%, black 100%);
+      background: -o-radial-gradient(center, ellipse cover, #262626 0%, #1a1a1a 21%, #141414 55%, black 100%);
+      background: -ms-radial-gradient(center, ellipse cover, #262626 0%, #1a1a1a 21%, #141414 55%, black 100%);
+      background: radial-gradient(ellipse at center, #262626 0%, #1a1a1a 21%, #141414 55%, black 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262626', endColorstr='#000000', GradientType=1 );
+      /*background: $blackcolor; */
+      height: 500px;
+      width: 500px;
+      border-radius: 100%;
+      margin: 0px;
+      border: 20px solid transparent;
+      text-align: center; }
+      .moon-section .moon .moon-inside .contact-info {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        .moon-section .moon .moon-inside .contact-info .homepage-title {
+          margin: 0px; }
+          .moon-section .moon .moon-inside .contact-info .homepage-title h3 {
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(22%, #cfc09f), color-stop(24%, #ffd008), color-stop(26%, #cfc09f), color-stop(27%, #cfc09f), color-stop(40%, #f79a07), color-stop(78%, #3a2c0f));
+            background: linear-gradient(to bottom, #cfc09f 22%, #634f2c 24%, #cfc09f 26%, #cfc09f 27%, #ffecb3 40%, #f79a07 78%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; }
+            .moon-section .moon .moon-inside .contact-info .homepage-title h3:after {
+              ackground: none;
+              content: attr(data-heading);
+              left: 0;
+              top: 0;
+              z-index: -1;
+              position: absolute;
+              text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f, 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4); }
+          .moon-section .moon .moon-inside .contact-info .homepage-title span:before {
+            background: linear-gradient(to bottom, #cfc09f 22%, #634f2c 24%, #cfc09f 26%, #cfc09f 27%, #ffecb3 40%, #f79a07 78%); }
+          .moon-section .moon .moon-inside .contact-info .homepage-title span:after {
+            background-color: #f79a07; }
+        .moon-section .moon .moon-inside .contact-info ul li {
+          margin: 5px 0px; }
+          .moon-section .moon .moon-inside .contact-info ul li span i {
+            font-size: 20px;
+            margin-right: 5px;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(22%, #cfc09f), color-stop(24%, #ffd008), color-stop(26%, #cfc09f), color-stop(27%, #cfc09f), color-stop(40%, #f79a07), color-stop(78%, #3a2c0f));
+            background: linear-gradient(to bottom, #cfc09f 22%, #634f2c 24%, #cfc09f 26%, #cfc09f 27%, #ffecb3 40%, #f79a07 78%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; }
+            .moon-section .moon .moon-inside .contact-info ul li span i:after {
+              ackground: none;
+              content: attr(data-heading);
+              left: 0;
+              top: 0;
+              z-index: -1;
+              position: absolute;
+              text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f, 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4); }
+          .moon-section .moon .moon-inside .contact-info ul li a {
+            font-size: 20px;
+            color: #fff; }
+
+.contact-us {
+  margin: 40px 0px; }
+  .contact-us .contact-form .input-group {
+    -webkit-box-shadow: 1px 1px 5px 0px #f2f2f2;
+    -moz-box-shadow: 1px 1px 5px 0px #f2f2f2;
+    box-shadow: 1px 1px 5px 0px #f2f2f2;
+    display: flex; }
+    .contact-us .contact-form .input-group .input-group-prepend {
       -webkit-border-radius: 0px;
       -moz-border-radius: 0px;
       border-radius: 0px; }
-  .contact-us .contact-form .input-group .form-control-lg {
-    flex: 1;
-    border: 1px solid #f2f2f2;
-    border-left: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px; }
-  .contact-us .contact-form .input-group textarea {
-    flex: 1;
-    border: 1px solid #f2f2f2;
-    border-left: 0px; }
+      .contact-us .contact-form .input-group .input-group-prepend .input-group-text {
+        width: 50px;
+        background: none;
+        border: 1px solid #f2f2f2;
+        border-right: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px; }
+        .contact-us .contact-form .input-group .input-group-prepend .input-group-text i {
+          color: #03073c; }
+    .contact-us .contact-form .input-group .form-control-lg {
+      flex: 1;
+      border: 1px solid #f2f2f2;
+      border-left: 0px;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px; }
+    .contact-us .contact-form .input-group textarea {
+      flex: 1;
+      border: 1px solid #f2f2f2;
+      border-left: 0px; }
+  .contact-us .contact-form .contact-btn {
+    background-color: #03073c;
+    color: #fff;
+    padding: 0px 2rem;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 0px;
+    transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in; }
+    .contact-us .contact-form .contact-btn:hover {
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -webkit-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -webkit-box-shadow: 1px 1px 5px 0px #f2f2f2;
+      -moz-box-shadow: 1px 1px 5px 0px #f2f2f2;
+      box-shadow: 1px 1px 5px 0px #f2f2f2; }
 
 #myBtn {
   display: none;

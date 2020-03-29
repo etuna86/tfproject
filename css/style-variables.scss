@@ -232,3 +232,59 @@ $mainColor:$weightBlueColor;
   border-color: transparent  transparent transparent $redcolor;
   float: left;
 }
+
+
+@mixin rotateMoon($rotateTime){
+
+
+  -webkit-animation: rotating $rotateTime linear infinite;
+  -moz-animation: rotating $rotateTime  linear infinite;
+  -ms-animation: rotating $rotateTime linear infinite;
+  -o-animation: rotating $rotateTime  linear infinite;
+  animation: rotating $rotateTime  linear infinite;
+
+
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+}
+
+@mixin moonBack(){
+  background: rgba(38,38,38,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(38,38,38,1) 0%, rgba(26,26,26,1) 21%, rgba(20,20,20,1) 55%, rgba(0,0,0,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(38,38,38,1)), color-stop(21%, rgba(26,26,26,1)), color-stop(55%, rgba(20,20,20,1)), color-stop(100%, rgba(0,0,0,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(38,38,38,1) 0%, rgba(26,26,26,1) 21%, rgba(20,20,20,1) 55%, rgba(0,0,0,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(38,38,38,1) 0%, rgba(26,26,26,1) 21%, rgba(20,20,20,1) 55%, rgba(0,0,0,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(38,38,38,1) 0%, rgba(26,26,26,1) 21%, rgba(20,20,20,1) 55%, rgba(0,0,0,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(38,38,38,1) 0%, rgba(26,26,26,1) 21%, rgba(20,20,20,1) 55%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262626', endColorstr='#000000', GradientType=1 );
+}
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+@mixin moonFontColor(){
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(22%, #cfc09f), color-stop(24%, #ffd008), color-stop(26%, #cfc09f), color-stop(27%, #cfc09f), color-stop(40%, #f79a07 ), color-stop(78%, #3a2c0f));
+  background: linear-gradient(to bottom, #cfc09f 22%, #634f2c 24%, #cfc09f 26%, #cfc09f 27%, #ffecb3 40%, #f79a07 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

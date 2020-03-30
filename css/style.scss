@@ -28,6 +28,7 @@ li
 a
 {
   text-decoration: none !important;
+  cursor: url("../img/crosshair.png"),auto;
 }
 
 .bootstrap-select .filter-option .text-muted {
@@ -258,6 +259,7 @@ a
 
           a
           {
+
             &:hover
             {
               i
@@ -495,11 +497,8 @@ a
             text-decoration: none;
             color:$mainColor;
             font-size: 18px;
-
-
+            font-weight: 600;
           }
-
-
           ul
           {
             display: none;
@@ -1758,7 +1757,8 @@ a
 
 
   .moon-section{
-    background:$weightBlueColor;
+    background: url("../img/universe_blue.jpg");
+    //background:$weightBlueColor;
     height: 100vh;
     /* display: -webkit-box; */
     display: -webkit-flex;
@@ -1880,6 +1880,9 @@ a
     }
   }
 
+  .map{
+    height: 450px;
+  }
   //Contact start
 
   .contact-us{

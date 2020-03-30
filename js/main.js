@@ -162,7 +162,6 @@ $('#testimonialsslider').owlCarousel({
     loop:true,
     margin:0,
     nav:false,
-    //navText: ["<img src='img/left-arrow.png'>","<img src='img/right-arrow.png'>"],
     responsive:{
         0:{
             items:1
@@ -180,7 +179,6 @@ $('#wedoing').owlCarousel({
     loop:true,
     margin:0,
     nav:true,
-    //navText: ["<img src='img/left-arrow.png'>","<img src='img/right-arrow.png'>"],
     responsive:{
         0:{
             items:3
@@ -194,13 +192,10 @@ $('#wedoing').owlCarousel({
     }
 })
 
-
 $(".list").on('click', function(event) {
     event.preventDefault();
-    var hash = this.hash;
+    var hash = this.hash ;
     $('html, body').animate({
-        scrollTop: $(hash).offset().top - 80
-    }, 800, function(){
-        window.location.hash = hash;
-    });
+        scrollTop:$(hash).offset().top - 60
+    },1000 );
 });

@@ -15,7 +15,8 @@ li {
   list-style: none; }
 
 a {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  cursor: url("../img/crosshair.png"), auto; }
 
 .bootstrap-select .filter-option .text-muted {
   display: none; }
@@ -403,7 +404,8 @@ header {
         header .header-menu ul li a {
           text-decoration: none;
           color: #03073c;
-          font-size: 18px; }
+          font-size: 18px;
+          font-weight: 600; }
         header .header-menu ul li ul {
           display: none;
           position: absolute; }
@@ -1353,7 +1355,7 @@ footer {
       -ms-transition: all .5s ease-in; }
 
 .moon-section {
-  background: #03073c;
+  background: url("../img/universe_blue.jpg");
   height: 100vh;
   /* display: -webkit-box; */
   display: -webkit-flex;
@@ -1484,6 +1486,9 @@ footer {
           .moon-section .moon .moon-inside .contact-info ul li a {
             font-size: 20px;
             color: #fff; }
+
+.map {
+  height: 450px; }
 
 .contact-us {
   margin: 40px 0px; }

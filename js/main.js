@@ -1,5 +1,6 @@
 
 //$('select.selectpicker').selectpicker();
+
 var a=0;
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
@@ -79,60 +80,6 @@ $( window ).scroll(function() {
 
 });
 
-$(window).scroll(function() {
-
-
-
-});
-
-/*
-function counters() {
-    $({Counter: 0}).animate({
-        Counter: $('.Single').text()
-    }, {
-        duration: 1000,
-        easing: 'swing',
-        step: function () {
-            $('.Single').text(Math.ceil(this.Counter));
-        }
-    });
-
-
-    $({Counter: 0}).animate({
-        Counter: $('.Single1').text()
-    }, {
-        duration: 1000,
-        easing: 'swing',
-        step: function () {
-            $('.Single1').text(Math.ceil(this.Counter));
-        }
-    });
-
-
-    $({Counter: 0}).animate({
-        Counter: $('.Single2').text()
-    }, {
-        duration: 1000,
-        easing: 'swing',
-        step: function () {
-            $('.Single2').text(Math.ceil(this.Counter));
-        }
-    });
-
-    $({Counter: 0}).animate({
-        Counter: $('.Single3').text()
-    }, {
-        duration: 1000,
-        easing: 'swing',
-        step: function () {
-            $('.Single3').text(Math.ceil(this.Counter));
-        }
-    });
-
-
-}
-*/
-
 $(".search-show-btn").click(function(){
     $(".search-text").toggleClass("slide");
 
@@ -199,3 +146,9 @@ $(".list").on('click', function(event) {
         scrollTop:$(hash).offset().top - 60
     },1000 );
 });
+
+$('#accordionExample').collapse({
+    toggle: false
+})
+
+//$('#accordionExample').collapse();

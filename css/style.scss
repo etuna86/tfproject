@@ -562,6 +562,7 @@ a
   {
     position: relative;
     height: 100vh;
+    overflow: hidden;
     .main-slider
     {
       height: 100vh;
@@ -900,10 +901,33 @@ a
         }
 
       }
-      img
-      {
+      .testimonials-img{
+        text-align: center;
 
+        img
+        {
+          max-width:150px;
+          height: 150px;
+          display: inline-block;
+          background: $whitecolor;
+          @include borderradius(100%);
+          position: relative;
+          z-index: 12;
+          &.sun{
+            @include rotateMoon(120s);
+            @include scale-method(1.1);
+            position: absolute;
+            z-index: 10;
+            max-width: 190px;
+            height: 190px;
+            display: inline-block;
+            margin-left: -20px;
+            margin-top: -20px;
+            background: none;
+          }
+        }
       }
+
       .live-desc
       {
         z-index: 2;
@@ -1880,9 +1904,24 @@ a
     }
   }
 
-  .map{
-    height: 450px;
+
+
+
+
+.fly-rules{
+    .fly-rules-img{
+      @include borderradius(10px);
+      overflow: hidden;
+      img{
+          max-width: 100%;
+      }
+    }
+  .fly-rules-item{
+
   }
+}
+
+
   //Contact start
 
   .contact-us{
@@ -1937,7 +1976,9 @@ a
     }
   }
 
-
+.map{
+  height: 450px;
+}
 
   #myBtn{
     display: none;

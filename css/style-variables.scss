@@ -41,7 +41,7 @@ $mainColor:$weightBlueColor;
   height: 0;
   border-style: solid;
   border-width: 20vh calc(50vw - 12px) 0vh 0;
-  border-color: $whitecolor transparent transparent transparent;
+  border-color: $weightBlueColor transparent transparent transparent;
   float: left;
 }
 @mixin triangleRightUpper()
@@ -50,7 +50,7 @@ $mainColor:$weightBlueColor;
   height: 0;
   border-style: solid;
   border-width: 0px calc(50vw - 12px) 20vh 0vh;
-  border-color:  transparent $whitecolor transparent transparent;
+  border-color:  transparent $weightBlueColor transparent transparent;
   float: right;
 }
 
@@ -111,7 +111,7 @@ $mainColor:$weightBlueColor;
   height: 0;
   border-style: solid;
   border-width: 0px calc(50vw - 12px) 20vh 0;
-  border-color: transparent transparent $whitecolor transparent;
+  border-color: transparent transparent $weightBlueColor transparent;
   float: left;
 }
 @mixin triangleRight()
@@ -120,7 +120,7 @@ $mainColor:$weightBlueColor;
   height: 0;
   border-style: solid;
   border-width: 20vh calc(50vw - 12px) 0px 0;
-  border-color: transparent $whitecolor transparent transparent;
+  border-color: transparent $weightBlueColor transparent transparent;
   float: right;
 }
 

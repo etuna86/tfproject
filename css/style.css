@@ -554,7 +554,7 @@ header {
       width: 100%;
       text-align: center;
       font-family: 'Roboto', sans-serif;
-      font-size: 14px;
+      font-size: 24px;
       float: left;
       color: #03073c;
       margin: 1rem 0; }
@@ -1537,7 +1537,44 @@ footer {
   overflow: hidden; }
   .fly-rules .fly-rules-img img {
     max-width: 100%; }
-
+.fly-rules .fly-rules-item .accordion {
+  -webkit-box-shadow: 1px 1px 5px 0px #f2f2f2;
+  -moz-box-shadow: 1px 1px 5px 0px #f2f2f2;
+  box-shadow: 1px 1px 5px 0px #f2f2f2; }
+  .fly-rules .fly-rules-item .accordion .card .card-header {
+    background: #03073c; }
+    .fly-rules .fly-rules-item .accordion .card .card-header h2 button {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600; }
+      .fly-rules .fly-rules-item .accordion .card .card-header h2 button.collapsed i.fa-star {
+        display: inline-block; }
+      .fly-rules .fly-rules-item .accordion .card .card-header h2 button.collapsed i.fa-sun-o {
+        display: none; }
+      .fly-rules .fly-rules-item .accordion .card .card-header h2 button i {
+        color: #fff;
+        margin: 0px 5px; }
+        .fly-rules .fly-rules-item .accordion .card .card-header h2 button i.fa-star {
+          display: none; }
+        .fly-rules .fly-rules-item .accordion .card .card-header h2 button i.fa-sun-o {
+          -webkit-animation: rotating 10s linear infinite;
+          -moz-animation: rotating 10s linear infinite;
+          -ms-animation: rotating 10s linear infinite;
+          -o-animation: rotating 10s linear infinite;
+          animation: rotating 10s linear infinite; }
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 .contact-us {
   margin: 40px 0px; }
   .contact-us .contact-form .input-group {

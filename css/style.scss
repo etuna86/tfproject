@@ -708,7 +708,7 @@ a
           width:100%;
           text-align: center;
           font-family: 'Roboto', sans-serif;
-          font-size:14px;
+          font-size:24px;
           float: left;
           color:$mainColor;
           margin:1rem 0;
@@ -1917,7 +1917,41 @@ a
       }
     }
   .fly-rules-item{
-
+      .accordion{
+        @include textShadow();
+        .card{
+          .card-header{
+            background:$weightBlueColor;
+            h2{
+              button{
+                color: $whitecolor;
+                text-decoration: none;
+                font-weight: 600;
+                &.collapsed{
+                  i{
+                    &.fa-star{
+                      display:  inline-block ;
+                    }
+                    &.fa-sun-o{
+                      display:none;
+                    }
+                  }
+                }
+                i{
+                  color: $whitecolor;
+                  margin:0px 5px;
+                  &.fa-star{
+                    display: none;
+                  }
+                  &.fa-sun-o{
+                    @include rotateMoon(10s);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
   }
 }
 

@@ -1,6 +1,3 @@
-
-//$('select.selectpicker').selectpicker();
-
 var a=0;
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
@@ -23,9 +20,7 @@ $(window).scroll(function() {
             }).animate({
                     countNum: countTo
                 },
-
                 {
-
                     duration: 2000,
                     easing: 'swing',
                     step: function() {
@@ -35,21 +30,14 @@ $(window).scroll(function() {
                         $this.text(this.countNum);
                         //alert('finished');
                     }
-
                 });
         });
         a = 1;
     }
-
-
-
 });
 
-/**/
 if (screen.width > 765) {
-
     window.onscroll = function() {scrollFunction()};
-
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementById("myBtn").style.display = "block";
@@ -57,8 +45,6 @@ if (screen.width > 765) {
             document.getElementById("myBtn").style.display = "none";
         }
     }
-
-    // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
         var myBtnElement=document.getElementById("myBtn");
         var rocketFire=myBtnElement.getElementsByTagName('b');
@@ -69,22 +55,13 @@ if (screen.width > 765) {
         body.stop().animate({scrollTop:0}, 1000, 'swing', function() {
         });
     }
-
-
-
 }
-
 $( window ).scroll(function() {
-
     $( ".counter-section" ).addClass("visibled");
-
 });
-
 $(".search-show-btn").click(function(){
     $(".search-text").toggleClass("slide");
-
 });
-
 $('#main-slider').owlCarousel({
     loop:true,
     margin:10,
@@ -151,4 +128,3 @@ $('#accordionExample').collapse({
     toggle: false
 })
 
-//$('#accordionExample').collapse();

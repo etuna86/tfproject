@@ -1531,12 +1531,15 @@ footer {
             color: #fff; }
 
 .fly-rules .fly-rules-img {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 5px 0px #f2f2f2;
+  -moz-box-shadow: 1px 1px 5px 0px #f2f2f2;
+  box-shadow: 1px 1px 5px 0px #f2f2f2;
   overflow: hidden; }
   .fly-rules .fly-rules-img img {
-    max-width: 100%; }
+    width: 100%; }
 .fly-rules .fly-rules-item .accordion {
   -webkit-box-shadow: 1px 1px 5px 0px #f2f2f2;
   -moz-box-shadow: 1px 1px 5px 0px #f2f2f2;

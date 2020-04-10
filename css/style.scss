@@ -1910,10 +1910,11 @@ a
 
 .fly-rules{
     .fly-rules-img{
-      @include borderradius(10px);
+      @include borderradius(5px);
+      @include textShadow();
       overflow: hidden;
       img{
-          max-width: 100%;
+          width: 100%;
       }
     }
   .fly-rules-item{

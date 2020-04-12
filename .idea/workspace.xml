@@ -2,50 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36cac385-b8d0-471b-83d2-0106a2d1d776" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/responsive.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/2d8355aaf04344431726ef3558365eac43a79235/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/2d8355aaf04344431726ef3558365eac43a79235/style.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/alternatifbank.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/altyapi.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/camera-screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/camera.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/camera.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/contact-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/drone.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/espor.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/etkinlik.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/flycam.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/footer-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/fourk.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/koctas.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/left-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/live-img.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/live-solution-yalın.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/partner.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/play.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/profesional.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/red-triangle-back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/reg-img.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/reg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/reklam.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/right-arrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/services/service-camera.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/services/service-conser.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/services/service-fair.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/services/service-medical.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/services/service-miting.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/services/service-tanitim.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/show.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/showreel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/time.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/timelaps.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/uplink.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/weardoing-background.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/webinerplatform.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/yayinda-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/yemeksepeti.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
@@ -60,9 +22,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="698" column="9" lean-forward="true" selection-start-line="698" selection-start-column="9" selection-end-line="698" selection-end-column="9" />
+            <state relative-caret-position="336">
+              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               <folding>
+                <element signature="n#div#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
@@ -80,28 +43,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.scss">
+        <entry file="file://$PROJECT_DIR$/css/responsive.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3117">
-              <caret line="1915" column="10" lean-forward="true" selection-start-line="1915" selection-start-column="10" selection-end-line="1915" selection-end-column="10" />
+            <state relative-caret-position="247">
+              <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+        <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2583">
-              <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
-              <folding>
-                <element signature="e#3117#3428#0" />
-                <element signature="e#3484#3756#0" />
-                <element signature="e#3808#3985#0" />
-                <element signature="e#4013#4049#0" />
-                <element signature="e#4097#4408#0" />
-                <element signature="e#4464#4736#0" />
-                <element signature="e#4788#4959#0" />
-              </folding>
+            <state relative-caret-position="189">
+              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -109,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style-variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2478">
+            <state relative-caret-position="520">
               <caret line="118" column="11" selection-start-line="118" selection-start-column="11" selection-end-line="118" selection-end-column="11" />
             </state>
           </provider>
@@ -118,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+            <state relative-caret-position="63">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -176,6 +130,7 @@
         <option value="$USER_HOME$/Desktop/Yeni klasör/index.html" />
         <option value="$PROJECT_DIR$/css/style.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/responsive.scss" />
         <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
@@ -265,18 +220,19 @@
       <workItem from="1586011757239" duration="501000" />
       <workItem from="1586329336605" duration="4365000" />
       <workItem from="1586365210054" duration="874000" />
-      <workItem from="1586500285738" duration="3298000" />
+      <workItem from="1586500285738" duration="3953000" />
+      <workItem from="1586675926697" duration="2465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68585000" />
+    <option name="totallyTimeSpent" value="71705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22121535" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22334754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -289,7 +245,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30985916" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30985916" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -330,9 +286,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/Yeni klasör/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2583">
+        <state relative-caret-position="2500">
           <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
           <folding>
             <element signature="e#3117#3428#0" />
@@ -346,32 +309,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style-variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2478">
-          <caret line="118" column="11" selection-start-line="118" selection-start-column="11" selection-end-line="118" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Yeni klasör/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3117">
-          <caret line="1915" column="10" lean-forward="true" selection-start-line="1915" selection-start-column="10" selection-end-line="1915" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="698" column="9" lean-forward="true" selection-start-line="698" selection-start-column="9" selection-end-line="698" selection-end-column="9" />
+        <state relative-caret-position="336">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
@@ -387,10 +330,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style-variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="118" column="11" selection-start-line="118" selection-start-column="11" selection-end-line="118" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+        <state relative-caret-position="63">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

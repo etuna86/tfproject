@@ -1,3 +1,8 @@
+$('.mobil-menu-btn').click(function () {
+    $('.mobile-menu').toggleClass('open');
+})
+
+
 var a=0;
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();

@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+  .open {
+    display: block !important;
+    transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    height: auto !important; }
+
+  .top-header {
+    display: none; }
+
+  header {
+    margin-top: 0px; }
+    header .logo-section {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0px; }
+      header .logo-section img {
+        display: inline-block; }
+    header .header-menu {
+      display: none; }
+    header .mobil-menu-btn {
+      display: block;
+      padding: 0px 15px; }
+      header .mobil-menu-btn i {
+        color: #03073c; }
+    header .mobile-menu {
+      display: none;
+      height: 1px;
+      transition: all 1s ease-in;
+      -moz-transition: all 1s ease-in;
+      -webkit-transition: all 1s ease-in;
+      -ms-transition: all 1s ease-in;
+      padding: 0px 15px; }
+      header .mobile-menu ul {
+        margin: 15px 0px; }
+        header .mobile-menu ul li a {
+          color: #03073c; }
+      header .mobile-menu .social {
+        float: left;
+        width: 100%; }
+        header .mobile-menu .social ul {
+          margin: 15px 0px; }
+          header .mobile-menu .social ul li {
+            float: left;
+            margin-left: 5px; }
+            header .mobile-menu .social ul li a {
+              color: #03073c; }
+      header .mobile-menu .language {
+        float: left;
+        width: 100%; }
+        header .mobile-menu .language ul {
+          margin: 15px 0px; }
+          header .mobile-menu .language ul li {
+            float: left;
+            margin-left: 5px; }
+            header .mobile-menu .language ul li a {
+              color: #03073c; }
+
+  .banner-section .main-slider .main-slider-item img {
+    object-fit: cover; } }
+
+/*# sourceMappingURL=responsive.css.map */

@@ -30,7 +30,14 @@ a
   text-decoration: none !important;
   cursor: url("../img/crosshair.png"),auto;
 }
-
+.mobil-menu-btn{
+  display: none;
+}
+.mobile-menu{
+  display: none;
+  height: 1px;
+  @include transition-method(1s);
+}
 .bootstrap-select .filter-option .text-muted {
   display: none;
 }

@@ -22,12 +22,11 @@ a {
   display: none; }
 
 .mobile-menu {
-  display: none;
   height: 1px;
-  transition: all 1s ease-in;
-  -moz-transition: all 1s ease-in;
-  -webkit-transition: all 1s ease-in;
-  -ms-transition: all 1s ease-in; }
+  transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in; }
 
 .bootstrap-select .filter-option .text-muted {
   display: none; }

@@ -1,11 +1,10 @@
 @media (max-width: 768px) {
   .open {
-    display: block !important;
-    transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in;
-    -webkit-transition: all 1s ease-in;
-    -ms-transition: all 1s ease-in;
-    height: auto !important; }
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    height: 40vh !important; }
 
   .top-header {
     display: none; }
@@ -27,12 +26,12 @@
       header .mobil-menu-btn i {
         color: #03073c; }
     header .mobile-menu {
-      display: none;
       height: 1px;
-      transition: all 1s ease-in;
-      -moz-transition: all 1s ease-in;
-      -webkit-transition: all 1s ease-in;
-      -ms-transition: all 1s ease-in;
+      overflow: hidden;
+      transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -webkit-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
       padding: 0px 15px; }
       header .mobile-menu ul {
         margin: 15px 0px; }
@@ -60,6 +59,57 @@
               color: #03073c; }
 
   .banner-section .main-slider .main-slider-item img {
-    object-fit: cover; } }
+    object-fit: cover; }
+
+  .webiner-platform {
+    background: #03073c; }
+    .webiner-platform .triangle-right-wight-blue {
+      display: none; }
+    .webiner-platform .webiner-inside {
+      position: relative; }
+      .webiner-platform .webiner-inside .webiner-desc {
+        width: 100%;
+        padding: 0px 15px;
+        margin: 20vh 0 0 0; }
+      .webiner-platform .webiner-inside .webiner-img {
+        width: 20%; }
+        .webiner-platform .webiner-inside .webiner-img img {
+          height: 20vh;
+          top: 0; }
+
+  .live-solution {
+    width: 100%; }
+    .live-solution .home-services .home-service-box {
+      width: 100%;
+      height: auto; }
+      .live-solution .home-services .home-service-box h3 {
+        font-size: 16px; }
+      .live-solution .home-services .home-service-box h4 {
+        font-size: 15px; }
+      .live-solution .home-services .home-service-box .home-services-desc .red-line {
+        width: 4px; }
+      .live-solution .home-services .home-service-box .home-services-desc p {
+        padding-left: 15px;
+        font-size: 12px; }
+    .live-solution .rightwhite {
+      display: none; }
+    .live-solution .rightred {
+      display: none; }
+
+  .what-are-we-doing #wedoing .owl-nav button {
+    position: relative; }
+  .what-are-we-doing #wedoing .owl-nav .owl-next span {
+    right: -50px;
+    font-size: 50px; }
+  .what-are-we-doing #wedoing .owl-nav .owl-prev span {
+    left: -50px;
+    font-size: 50px; }
+  .what-are-we-doing #wedoing .owl-dots {
+    display: none; }
+  .what-are-we-doing #wedoing .item .item-hover .item-hover-img img {
+    width: 40vw; }
+
+  .fly-rules .fly-rules-img {
+    margin-bottom: 15px; } }
 
 /*# sourceMappingURL=responsive.css.map */

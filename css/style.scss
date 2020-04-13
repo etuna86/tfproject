@@ -34,9 +34,9 @@ a
   display: none;
 }
 .mobile-menu{
-  display: none;
+
   height: 1px;
-  @include transition-method(1s);
+  @include transition-method(0.5s);
 }
 .bootstrap-select .filter-option .text-muted {
   display: none;

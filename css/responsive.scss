@@ -2,9 +2,8 @@
 
 @media   (max-width:768px) {
   .open{
-    display: block !important;
-    @include transition-method(1s);
-    height: auto !important;
+    @include transition-method(0.5s);
+    height: 40vh !important;
   }
   .top-header{
     display: none;
@@ -31,9 +30,9 @@
     }
   }
   .mobile-menu{
-    display: none;
     height: 1px;
-    @include transition-method(1s);
+    overflow: hidden;
+    @include transition-method(0.5s);
     padding: 0px 15px;
     ul {
       margin:15px 0px;
@@ -85,4 +84,100 @@
     }
   }
 
+
+  .webiner-platform {
+    background: $weightBlueColor;
+    .triangle-right-wight-blue{
+      display: none;
+    }
+    .webiner-inside {
+      position: relative;
+
+
+      .webiner-desc{
+        width: 100%;
+        padding: 0px 15px;
+        margin: 20vh 0 0 0;
+      }
+      .webiner-img {
+        width: 20%;
+        img{
+          height: 20vh;
+          top: 0;
+        }
+      }
+    }
+  }
+  .live-solution{
+    width:100%;
+    .home-services {
+      .home-service-box{
+        width:100%;
+        height: auto;
+         h3 {
+          font-size: 16px;
+        }
+        h4{
+          font-size: 15px;
+        }
+        .home-services-desc {
+          .red-line{
+            width: 4px;
+          }
+          p{
+            padding-left: 15px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .rightwhite{
+      display: none;
+    }
+    .rightred{
+      display: none;
+    }
+  }
+
+  .what-are-we-doing {
+    #wedoing {
+        .owl-nav {
+          button{
+            position: relative;
+          }
+          .owl-next {
+            span {
+              right: -50px;
+              font-size: 50px;
+            }
+          }
+          .owl-prev {
+            span {
+              left: -50px;
+              font-size: 50px;
+            }
+          }
+        }
+        .owl-dots{
+          display: none;
+        }
+
+
+
+      .item {
+        .item-hover {
+          .item-hover-img {
+            img{
+              width:40vw;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fly-rules {
+    .fly-rules-img{
+      margin-bottom:15px;
+    }
+  }
 }

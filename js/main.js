@@ -2,6 +2,9 @@ $('.mobil-menu-btn').click(function () {
     $('.mobile-menu').toggleClass('open');
 })
 
+$('.list').click(function () {
+    $('.mobile-menu').toggleClass('open');
+})
 
 var a=0;
 $(window).scroll(function() {
@@ -89,7 +92,7 @@ $('#main-slider').owlCarousel({
 $('#testimonialsslider').owlCarousel({
     items:1,
     loop:true,
-    margin:0,
+    margin:15,
     nav:false,
     responsive:{
         0:{
@@ -106,18 +109,20 @@ $('#testimonialsslider').owlCarousel({
 $('#wedoing').owlCarousel({
     items:3,
     loop:true,
-    margin:0,
+    margin:15,
     nav:true,
     responsive:{
         0:{
-            items:3
+            items:1,
+            margin:50,
         },
         600:{
             items:3
         },
         1000:{
             items:3
-        }
+        },
+
     }
 })
 

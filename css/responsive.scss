@@ -180,4 +180,44 @@
       margin-bottom:15px;
     }
   }
+  .moon-section {
+    .moon-out{
+      height: 300px;
+      width: 300px;
+    }
+    .moon {
+      height: 300px;
+      width: 300px;
+      .moon-inside{
+        height: 250px;
+        width: 250px;
+        .contact-info {
+          .homepage-title {
+            h3{
+            }
+          }
+          ul{
+            li{
+              a{
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-inside {
+      .footer-menu {
+        ul {
+          li{
+            width: 100%;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
 }

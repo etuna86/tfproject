@@ -28,13 +28,13 @@ li
 a
 {
   text-decoration: none !important;
-  cursor: url("../img/crosshair.png"),auto;
+  /*cursor: url("../img/crosshair.png"),auto;*/
 }
 .mobil-menu-btn{
   display: none;
 }
 .mobile-menu{
-
+  overflow: hidden;
   height: 1px;
   @include transition-method(0.5s);
 }
@@ -677,6 +677,7 @@ a
 
       .counter
       {
+        margin: 10px 0px;
         padding: 0px 1rem;
         i{
           float: left;

@@ -16,12 +16,13 @@ li {
 
 a {
   text-decoration: none !important;
-  cursor: url("../img/crosshair.png"), auto; }
+  /*cursor: url("../img/crosshair.png"),auto;*/ }
 
 .mobil-menu-btn {
   display: none; }
 
 .mobile-menu {
+  overflow: hidden;
   height: 1px;
   transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
@@ -534,6 +535,7 @@ header {
 .counter-section .counters {
   padding: 5rem; }
   .counter-section .counters .counter {
+    margin: 10px 0px;
     padding: 0px 1rem; }
     .counter-section .counters .counter i {
       float: left;

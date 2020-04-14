@@ -110,6 +110,22 @@
     width: 40vw; }
 
   .fly-rules .fly-rules-img {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+
+  .moon-section .moon-out {
+    height: 300px;
+    width: 300px; }
+  .moon-section .moon {
+    height: 300px;
+    width: 300px; }
+    .moon-section .moon .moon-inside {
+      height: 250px;
+      width: 250px; }
+      .moon-section .moon .moon-inside .contact-info ul li a {
+        font-size: 13px; }
+
+  footer .footer-inside .footer-menu ul li {
+    width: 100%;
+    text-align: left; } }
 
 /*# sourceMappingURL=responsive.css.map */

@@ -1,9 +1,11 @@
+
+
 $('.mobil-menu-btn').click(function () {
     $('.mobile-menu').toggleClass('open');
 })
 
 $('.list').click(function () {
-    $('.mobile-menu').toggleClass('open');
+    $('.mobile-menu').removeClass('open');
 })
 
 var a=0;
@@ -44,7 +46,7 @@ $(window).scroll(function() {
     }
 });
 
-if (screen.width > 765) {
+if (screen.width > 765) {}
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -63,7 +65,7 @@ if (screen.width > 765) {
         body.stop().animate({scrollTop:0}, 1000, 'swing', function() {
         });
     }
-}
+
 $( window ).scroll(function() {
     $( ".counter-section" ).addClass("visibled");
 });
@@ -138,3 +140,17 @@ $('#accordionExample').collapse({
     toggle: false
 })
 
+
+/*
+wow = new wow(
+    {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+    }
+)
+
+new wow().init();
+*/

@@ -58,8 +58,26 @@
             header .mobile-menu .language ul li a {
               color: #03073c; }
 
-  .banner-section .main-slider .main-slider-item img {
-    object-fit: cover; }
+  .banner-section {
+    height: 300px;
+    top: 95px;
+    overflow: visible;
+    /*.owl-nav {
+      button{
+        position: relative;
+      }
+    }  */ }
+    .banner-section .triangle-section-upper {
+      display: none; }
+    .banner-section .triangle-section {
+      display: none; }
+    .banner-section .main-slider {
+      height: 300px; }
+      .banner-section .main-slider .main-slider-item img {
+        object-fit: cover;
+        height: 300px; }
+      .banner-section .main-slider .main-slider-item .main-slider-content h3 {
+        fonts-size: 16px; }
 
   .webiner-platform {
     background: #03073c; }

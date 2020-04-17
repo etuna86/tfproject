@@ -1,12 +1,7 @@
 @import 'style-variables';
 @import url('https://fonts.googleapis.com/css?family=Gugi&display=swap');
-//font-family: 'Gugi', cursive;
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-
-//@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
-//font-family: 'Raleway', sans-serif;
 
 body
 {
@@ -28,7 +23,6 @@ li
 a
 {
   text-decoration: none !important;
-  /*cursor: url("../img/crosshair.png"),auto;*/
 }
 .mobil-menu-btn{
   display: none;
@@ -157,18 +151,34 @@ a
         height: 50px;
         width:50px;
         text-align:center;
-        background: $whitecolor;
-        border:1px solid $weightBlueColor;
+        background:$whitecolorpacity03;
+        border:1px solid $whitecolor;
         line-height: 60px;
         @include transition-method(0.2s);
           &:hover{
             @include borderradius(100%);
             @include transition-method(0.2s);
+            background:$whitecolor;
+            border:1px solid $weightBlueColor;
           }
         i{
           font-size:30px;
           color:$weightBlueColor;
           @include rotateMethod(-135deg);
+        }
+        b{
+          display: none;
+          .flame{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url(../img/flame.png);
+            background-size: 60px;
+            position: relative;
+            background-position: 20px;
+            animation: firewawe 0.3s infinite;
+            @include rotateMethod(90deg);
+          }
         }
       }
 
@@ -181,11 +191,13 @@ a
          height: 50px;
          width:50px;
          text-align:center;
-         background: $whitecolor;
-         border:1px solid $weightBlueColor;
+         background:$whitecolorpacity03;
+         border:1px solid $whitecolor;
          line-height: 60px;
          @include transition-method(0.2s);
          &:hover{
+           background:$whitecolor;
+           border:1px solid $weightBlueColor;
            @include borderradius(100%);
            @include transition-method(0.2s);
          }
@@ -194,6 +206,20 @@ a
          color:$weightBlueColor;
          @include rotateMethod(45deg);
        }
+         b{
+           display: none;
+           .flame{
+             display: inline-block;
+             width: 20px;
+             height: 20px;
+             background: url(../img/flame.png);
+             background-size: 60px;
+             position: relative;
+             background-position: 20px;
+             animation: firewawe 0.3s infinite;
+             @include rotateMethod(-90deg);
+           }
+         }
        }
      }
   }
@@ -263,10 +289,11 @@ a
         {
           float: left;
           padding: 0px 10px;
-
+          height: 30px;
+          line-height: 30px;
           a
           {
-
+            font-size: 14px;
             &:hover
             {
               i
@@ -294,21 +321,25 @@ a
     {
       display: inline-block;
       float: left;
+      height: 30px;
+      line-height: 30px;
       i
       {
         color:$mainColor;
-        font-size:12px;
+        font-size: 14px;
       }
       a
       {
         color:$mainColor;
-        font-size:12px;
+        font-size: 14px;
       }
     }
     .language{
       float: left;
       margin-left:15px;
       display: inline-block;
+      height: 30px;
+      line-height: 30px;
       ul
       {
         li{
@@ -577,13 +608,23 @@ a
       {
         h3
         {
-
+            color:$weightBlueColor;
         }
         .main-slider-content
         {
+          min-width:200px;
+          background-color:$whitecolorpacity03;
+          padding: 15px;
+          border:1px solid $whitecolor;
           position: absolute;
           top:50%;
           left:25%;
+          @include transition-method(0.3s);
+          &:hover{
+            background-color:$whitecolor;
+            border:1px solid $weightBlueColor;
+            @include transition-method(0.3s);
+          }
           .content
           {
             p
@@ -939,17 +980,20 @@ a
       .live-desc
       {
         z-index: 2;
+        background: $whitecolor;
+        padding: 15px;
+        @include borderradius(10px);
         h3
         {
-          color:$whitecolor;
+          color:$weightBlueColor;
         }
         p
         {
-          color:$whitecolor;
+          color:$weightBlueColor;
         }
         a
         {
-          color:$whitecolor;
+          color:$weightBlueColor;
           text-decoration: none;
           float: right;
         }
@@ -1163,6 +1207,8 @@ a
         margin: 0px 1vw;
         position: relative;
         cursor:pointer;
+        border-radius: 10px;
+        overflow: hidden;
         &:hover{
           .doing-top{
             top:-50px;
@@ -2062,7 +2108,7 @@ a
         display: inline-block;
         width: 20px;
         height: 20px;
-        background: url(../img/flame.jpg);
+        background: url(../img/flame.png);
         background-size: 60px;
         position: relative;
         background-position: 20px;

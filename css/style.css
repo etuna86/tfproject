@@ -15,8 +15,7 @@ li {
   list-style: none; }
 
 a {
-  text-decoration: none !important;
-  /*cursor: url("../img/crosshair.png"),auto;*/ }
+  text-decoration: none !important; }
 
 .mobil-menu-btn {
   display: none; }
@@ -142,8 +141,8 @@ a {
       height: 50px;
       width: 50px;
       text-align: center;
-      background: #fff;
-      border: 1px solid #03073c;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid #fff;
       line-height: 60px;
       transition: all 0.2s ease-in;
       -moz-transition: all 0.2s ease-in;
@@ -156,13 +155,29 @@ a {
         transition: all 0.2s ease-in;
         -moz-transition: all 0.2s ease-in;
         -webkit-transition: all 0.2s ease-in;
-        -ms-transition: all 0.2s ease-in; }
+        -ms-transition: all 0.2s ease-in;
+        background: #fff;
+        border: 1px solid #03073c; }
       .owl-nav button.owl-prev .slider-arrow-box i {
         font-size: 30px;
         color: #03073c;
         -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
         -moz-transform: rotate(-135deg); }
+      .owl-nav button.owl-prev .slider-arrow-box b {
+        display: none; }
+        .owl-nav button.owl-prev .slider-arrow-box b .flame {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url(../img/flame.png);
+          background-size: 60px;
+          position: relative;
+          background-position: 20px;
+          animation: firewawe 0.3s infinite;
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -moz-transform: rotate(90deg); }
   .owl-nav button.owl-next {
     right: 20px;
     outline: 0; }
@@ -170,14 +185,16 @@ a {
       height: 50px;
       width: 50px;
       text-align: center;
-      background: #fff;
-      border: 1px solid #03073c;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid #fff;
       line-height: 60px;
       transition: all 0.2s ease-in;
       -moz-transition: all 0.2s ease-in;
       -webkit-transition: all 0.2s ease-in;
       -ms-transition: all 0.2s ease-in; }
       .owl-nav button.owl-next .slider-arrow-box:hover {
+        background: #fff;
+        border: 1px solid #03073c;
         -webkit-border-radius: 100%;
         -moz-border-radius: 100%;
         border-radius: 100%;
@@ -191,6 +208,20 @@ a {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         -moz-transform: rotate(45deg); }
+      .owl-nav button.owl-next .slider-arrow-box b {
+        display: none; }
+        .owl-nav button.owl-next .slider-arrow-box b .flame {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url(../img/flame.png);
+          background-size: 60px;
+          position: relative;
+          background-position: 20px;
+          animation: firewawe 0.3s infinite;
+          -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          -moz-transform: rotate(-90deg); }
 
 .top-header {
   height: 30px;
@@ -239,8 +270,11 @@ a {
       padding: 0px; }
       .top-header .top-header-menu ul li {
         float: left;
-        padding: 0px 10px; }
+        padding: 0px 10px;
+        height: 30px;
+        line-height: 30px; }
         .top-header .top-header-menu ul li a {
+          font-size: 14px;
           color: #03073c; }
           .top-header .top-header-menu ul li a:hover i {
             margin-right: 0px;
@@ -259,17 +293,21 @@ a {
             -ms-transition: all 0.5s ease-in; }
   .top-header .phone {
     display: inline-block;
-    float: left; }
+    float: left;
+    height: 30px;
+    line-height: 30px; }
     .top-header .phone i {
       color: #03073c;
-      font-size: 12px; }
+      font-size: 14px; }
     .top-header .phone a {
       color: #03073c;
-      font-size: 12px; }
+      font-size: 14px; }
   .top-header .language {
     float: left;
     margin-left: 15px;
-    display: inline-block; }
+    display: inline-block;
+    height: 30px;
+    line-height: 30px; }
     .top-header .language ul li {
       float: left;
       margin-left: 5px; }
@@ -454,10 +492,27 @@ header {
   overflow: hidden; }
   .banner-section .main-slider {
     height: 100vh; }
+    .banner-section .main-slider .main-slider-item h3 {
+      color: #03073c; }
     .banner-section .main-slider .main-slider-item .main-slider-content {
+      min-width: 200px;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 15px;
+      border: 1px solid #fff;
       position: absolute;
       top: 50%;
-      left: 25%; }
+      left: 25%;
+      transition: all 0.3s ease-in;
+      -moz-transition: all 0.3s ease-in;
+      -webkit-transition: all 0.3s ease-in;
+      -ms-transition: all 0.3s ease-in; }
+      .banner-section .main-slider .main-slider-item .main-slider-content:hover {
+        background-color: #fff;
+        border: 1px solid #03073c;
+        transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in; }
       .banner-section .main-slider .main-slider-item .main-slider-content .slider-btn {
         background: #03073c;
         display: inline-block;
@@ -773,13 +828,18 @@ header {
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
     .live-solution .live-box .live-desc {
-      z-index: 2; }
+      z-index: 2;
+      background: #fff;
+      padding: 15px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
       .live-solution .live-box .live-desc h3 {
-        color: #fff; }
+        color: #03073c; }
       .live-solution .live-box .live-desc p {
-        color: #fff; }
+        color: #03073c; }
       .live-solution .live-box .live-desc a {
-        color: #fff;
+        color: #03073c;
         text-decoration: none;
         float: right; }
       .live-solution .live-box .live-desc .socials ul li {
@@ -931,7 +991,9 @@ header {
     .what-are-we-doing #wedoing .item {
       margin: 0px 1vw;
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      border-radius: 10px;
+      overflow: hidden; }
       .what-are-we-doing #wedoing .item:hover .doing-top {
         top: -50px;
         transition: all 0.5s ease-in;
@@ -960,14 +1022,14 @@ header {
             height: 0;
             border-style: solid;
             border-width: 50px 100px 0vh 0;
-            border-color: #fff transparent transparent transparent;
+            border-color: #03073c transparent transparent transparent;
             float: left; }
           .what-are-we-doing #wedoing .item .doing-top .doing-top-inside .right-angle {
             width: 0;
             height: 0;
             border-style: solid;
             border-width: 0px 100px 50px 0;
-            border-color: transparent #fff transparent transparent;
+            border-color: transparent #03073c transparent transparent;
             float: right; }
       .what-are-we-doing #wedoing .item .doing-bottom {
         transition: all 0.5s ease-in;
@@ -982,14 +1044,14 @@ header {
           height: 0;
           border-style: solid;
           border-width: 0px 100px 50px 0;
-          border-color: transparent transparent #fff transparent;
+          border-color: transparent transparent #03073c transparent;
           float: left; }
         .what-are-we-doing #wedoing .item .doing-bottom .right-angle {
           width: 0;
           height: 0;
           border-style: solid;
           border-width: 50px 100px 0px 0;
-          border-color: transparent #fff transparent transparent;
+          border-color: transparent #03073c transparent transparent;
           float: right; }
       .what-are-we-doing #wedoing .item .item-hover {
         opacity: 1;
@@ -1699,7 +1761,7 @@ footer {
       display: inline-block;
       width: 20px;
       height: 20px;
-      background: url(../img/flame.jpg);
+      background: url(../img/flame.png);
       background-size: 60px;
       position: relative;
       background-position: 20px;

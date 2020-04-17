@@ -8,6 +8,7 @@ $('.list').click(function () {
     $('.mobile-menu').removeClass('open');
 })
 
+
 var a=0;
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
@@ -77,7 +78,7 @@ $('#main-slider').owlCarousel({
     margin:10,
     dots:false,
     nav:true,
-    navText:['<div class="slider-arrow-box"><i class="fa fa-rocket" aria-hidden="true"></i></div>','<div class="slider-arrow-box"><i class="fa fa-rocket" aria-hidden="true"></i></div>'],
+    navText:['<div class="slider-arrow-box"><i class="fa fa-rocket" aria-hidden="true"></i><b><div class="flame"></div></b></div>','<div class="slider-arrow-box"><b><div class="flame"></div></b><i class="fa fa-rocket" aria-hidden="true"></i></div>'],
     responsive:{
         0:{
             items:1
@@ -141,6 +142,22 @@ $('#accordionExample').collapse({
 })
 
 
+
+$('.owl-next').click(function () {
+    var owlNext=document.getElementsByClassName('owl-next');
+    var sliderArrowBoxNext=owlNext[0].getElementsByClassName('slider-arrow-box');
+    var SliderRocketFire=sliderArrowBoxNext[0].getElementsByTagName('b');
+    SliderRocketFire[0].style.display = "inline-block";
+    setTimeout(function(){  SliderRocketFire[0].style.display = "none"; }, 200);
+})
+
+$('.owl-prev').click(function () {
+    var owlPrev=document.getElementsByClassName('owl-prev');
+    var sliderArrowBoxNext=owlPrev[0].getElementsByClassName('slider-arrow-box');
+    var SliderRocketFire=sliderArrowBoxNext[0].getElementsByTagName('b');
+    SliderRocketFire[0].style.display = "inline-block";
+    setTimeout(function(){  SliderRocketFire[0].style.display = "none"; }, 200);
+})
 /*
 wow = new wow(
     {

@@ -75,13 +75,37 @@
 
 
 .banner-section {
+  height:300px;
+  top: 95px;
+  overflow: visible;
+  .triangle-section-upper{
+    display: none;
+  }
+  .triangle-section{
+    display: none;
+  }
     .main-slider {
+      height: 300px;
+
       .main-slider-item {
         img {
           object-fit: cover;
+          height: 300px;
+        }
+        .main-slider-content{
+
+          h3{
+            fonts-size:16px;
+          }
         }
       }
     }
+
+  /*.owl-nav {
+    button{
+      position: relative;
+    }
+  }  */
   }
 
 

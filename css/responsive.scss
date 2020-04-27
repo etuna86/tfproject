@@ -28,6 +28,43 @@
     i{
       color:$weightBlueColor;
     }
+    .top-line{
+      margin-top:6px;
+      height: 2px;
+      background-color:$weightBlueColor;
+      width: 24px;
+      @include transition-method(.5s);
+    }
+    .middle-line{
+      margin-top:6px;
+      height: 2px;
+      background-color:$weightBlueColor;
+      width: 24px;
+      @include transition-method(.5s);
+    }
+    .bottom-line{
+      margin-top:6px;
+      height: 2px;
+      background-color:$weightBlueColor;
+      width: 24px;
+      @include transition-method(.5s);
+    }
+    &.opened{
+      .top-line{
+        @include transition-method(.5s);
+        @include rotateMethod(45deg);
+      }
+      .middle-line{
+        margin-top:0px;
+        @include transition-method(.5s);
+        display: none;
+      }
+      .bottom-line{
+        margin-top:0px;
+        @include transition-method(.5s);
+        @include rotateMethod(-45deg);
+      }
+    }
   }
   .mobile-menu{
     height: 1px;
@@ -93,9 +130,18 @@
           height: 300px;
         }
         .main-slider-content{
-
+          text-align: center;
+          bottom: 0px;
+          width: 100%;
+          left: 0px;
+          top: 0;
+          text-align: center;
           h3{
             fonts-size:16px;
+          }
+          .slider-btn{
+            height: 35px;
+            line-height: 35px;
           }
         }
       }
@@ -108,6 +154,15 @@
   }  */
   }
 
+  .counter-section{
+    position: relative;
+    margin:15px 0px;
+
+    .col-md-3{
+      border-bottom: 1px solid $weightBlueColor;
+      margin-bottom:15px ;
+    }
+  }
 
   .webiner-platform {
     background: $weightBlueColor;
@@ -161,6 +216,12 @@
     .rightred{
       display: none;
     }
+    .live-box{
+      .testimonials-img{
+        margin-bottom:15px;
+      }
+    }
+
   }
 
   .what-are-we-doing {

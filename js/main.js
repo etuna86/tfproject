@@ -1,11 +1,13 @@
 
 
 $('.mobil-menu-btn').click(function () {
+    $(this).toggleClass('opened');
     $('.mobile-menu').toggleClass('open');
 })
 
 $('.list').click(function () {
     $('.mobile-menu').removeClass('open');
+    $('.mobil-menu-btn').removeClass('opened');
 })
 
 

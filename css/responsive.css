@@ -25,6 +25,57 @@
       padding: 0px 15px; }
       header .mobil-menu-btn i {
         color: #03073c; }
+      header .mobil-menu-btn .top-line {
+        margin-top: 6px;
+        height: 2px;
+        background-color: #03073c;
+        width: 24px;
+        transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in; }
+      header .mobil-menu-btn .middle-line {
+        margin-top: 6px;
+        height: 2px;
+        background-color: #03073c;
+        width: 24px;
+        transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in; }
+      header .mobil-menu-btn .bottom-line {
+        margin-top: 6px;
+        height: 2px;
+        background-color: #03073c;
+        width: 24px;
+        transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in; }
+      header .mobil-menu-btn.opened .top-line {
+        transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg); }
+      header .mobil-menu-btn.opened .middle-line {
+        margin-top: 0px;
+        transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        display: none; }
+      header .mobil-menu-btn.opened .bottom-line {
+        margin-top: 0px;
+        transition: all 0.5s ease-in;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -ms-transition: all 0.5s ease-in;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg); }
     header .mobile-menu {
       height: 1px;
       overflow: hidden;
@@ -76,8 +127,25 @@
       .banner-section .main-slider .main-slider-item img {
         object-fit: cover;
         height: 300px; }
-      .banner-section .main-slider .main-slider-item .main-slider-content h3 {
-        fonts-size: 16px; }
+      .banner-section .main-slider .main-slider-item .main-slider-content {
+        text-align: center;
+        bottom: 0px;
+        width: 100%;
+        left: 0px;
+        top: 0;
+        text-align: center; }
+        .banner-section .main-slider .main-slider-item .main-slider-content h3 {
+          fonts-size: 16px; }
+        .banner-section .main-slider .main-slider-item .main-slider-content .slider-btn {
+          height: 35px;
+          line-height: 35px; }
+
+  .counter-section {
+    position: relative;
+    margin: 15px 0px; }
+    .counter-section .col-md-3 {
+      border-bottom: 1px solid #03073c;
+      margin-bottom: 15px; }
 
   .webiner-platform {
     background: #03073c; }
@@ -113,6 +181,8 @@
       display: none; }
     .live-solution .rightred {
       display: none; }
+    .live-solution .live-box .testimonials-img {
+      margin-bottom: 15px; }
 
   .what-are-we-doing #wedoing .owl-nav button {
     position: relative; }
